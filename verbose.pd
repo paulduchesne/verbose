@@ -1,4 +1,4 @@
-#N canvas 307 41 898 720 12;
+#N canvas 600 43 898 720 12;
 #N canvas 117 24 508 724 index 0;
 #X obj 34 42 loadbang;
 #X obj 37 116 phasor~ 0.00166667;
@@ -36,3 +36,5 @@
 #X obj 232 62 single 2;
 #X obj 442 62 single 3;
 #X obj 652 62 single 4;
+#X obj 22 202 multi 1;
+#X obj 442 202 multi 2;
