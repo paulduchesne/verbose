@@ -1,0 +1,10 @@
+#N canvas 1019 200 876 613 12;
+#X obj 73 157 text define state;
+#X msg 80 38 write test.txt;
+#X msg 125 89 read test.txt;
+#X obj 69 244 datum interval 0;
+#X obj 362 148 s load_preset;
+#X obj 362 114 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 5 0 4 0;

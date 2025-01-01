@@ -1,4 +1,4 @@
-#N canvas 0 38 611 340 12;
+#N canvas 542 44 970 513 12;
 #X obj 40 193 index;
 #X floatatom 40 40 5 0 0 1 interval interval_in interval_out 12;
 #X obj 40 70 oscillator 1;
@@ -15,3 +15,4 @@
 #X obj 40 133 oscillator 4;
 #X obj 40 163 braid sample_trigger;
 #X obj 186 163 bng 19 250 50 0 no_send braid_sample_trigger_bang empty 0 -10 0 12 #551312 #ffc7c6 #000000;
+#X obj 40 223 preset;
