@@ -1,10 +1,13 @@
-#N canvas 668 538 423 287 12;
-#X obj 25 21 hsl 150 20 0 127 0 0 osc_\$1_input_out osc_\$1_input_in input 0 10 0 12 #000000 #ffffff #606060 0 1;
+#N canvas 1430 24 480 455 12;
+#X obj 25 21 hsl 150 20 0 127 0 0 osc_\$1_input_out osc_\$1_input_in
+input 0 10 0 12 #000000 #ffffff #606060 0 1;
 #X floatatom 22 111 10 0 0 1 ms osc_\$1_ms_in osc_\$1_ms_out 0;
-#X obj 25 141 hsl 150 20 -1 1 0 0 nope osc_\$1_output output 0 10 0 12 #000000 #ffffff #606060 0 1;
-#X floatatom 22 51 5 0 0 1 start osc_\$1_start_in osc_\$1_start_out 0;
+#X obj 25 141 hsl 150 20 -1 1 0 0 nope osc_\$1_output output 0 10 0
+12 #000000 #ffffff #606060 0 1;
+#X floatatom 22 51 5 0 0 1 start osc_\$1_start_in osc_\$1_start_out
+0;
 #X floatatom 22 81 5 0 0 1 end osc_\$1_end_in osc_\$1_end_out 0;
-#N canvas 0 0 1203 774 working 1;
+#N canvas 0 0 1203 774 working 0;
 #X obj 53 112 ctlin \$1;
 #X obj 821 256 r~ index;
 #X obj 833 375 expr 600000/$f1;
@@ -39,10 +42,12 @@
 #X obj 573 236 t b f;
 #X msg 193 485 2;
 #X obj 718 549 threshold~;
-#X obj 721 600 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 721 600 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc
+#000000 #000000;
 #X obj 52 191 s osc_\$1_input_in;
 #X obj 401 130 r osc_\$1_input_out;
-#X obj 57 137 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 57 137 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc
+#000000 #000000 0 1;
 #X floatatom 410 661 5 0 0 0 - - - 0;
 #X obj 491 661 s osc_\$1_ms_in;
 #X obj 831 286 r osc_\$1_ms_out;
@@ -50,7 +55,7 @@
 #X obj 963 315 r~ osc_\$1_output;
 #X obj 963 435 s osc_\$1_output;
 #X obj 799 604 s osc_\$1_bang;
-#X msg 48 483 2;
+#X msg 48 483 4;
 #X obj 145 333 expr \$1;
 #X obj 70 332 t b b;
 #X msg 146 403 set \$1;
@@ -107,3 +112,4 @@
 #X connect 48 0 45 0;
 #X connect 49 1 2 0;
 #X restore 22 171 pd working;
+#X text 92 70 thought \, would crossfade between osc work better;

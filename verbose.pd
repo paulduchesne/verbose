@@ -1,18 +1,27 @@
-#N canvas 542 44 970 513 12;
+#N canvas -10 548 480 455 12;
 #X obj 40 193 index;
 #X floatatom 40 40 5 0 0 1 interval interval_in interval_out 12;
 #X obj 40 70 oscillator 1;
-#X obj 130 70 bng 19 250 50 0 nope osc_1_bang empty 0 -10 0 12 #2f004d #e3c6ff #000000;
-#X obj 154 70 hsl 162 19 -1 1 0 0 no_send osc_1_output empty -2 -10 0 12 #2f004d #e3c6ff #000000 0 1;
-#X obj 130 91 bng 19 250 50 0 nope osc_2_bang empty 0 -10 0 12 #2f004d #e3c6ff #000000;
-#X obj 154 91 hsl 162 19 -1 1 0 0 no_send osc_2_output empty -2 -10 0 12 #2f004d #e3c6ff #000000 0 1;
-#X obj 130 112 bng 19 250 50 0 nope osc_3_bang empty 0 -10 0 12 #2f004d #e3c6ff #000000;
-#X obj 154 112 hsl 162 19 -1 1 0 0 no_send osc_3_output empty -2 -10 0 12 #2f004d #e3c6ff #000000 0 1;
-#X obj 130 133 bng 19 250 50 0 nope osc_4_bang empty 0 -10 0 12 #2f004d #e3c6ff #000000;
-#X obj 154 133 hsl 162 19 -1 1 0 0 no_send osc_4_output empty -2 -10 0 12 #2f004d #e3c6ff #000000 0 1;
+#X obj 130 70 bng 19 250 50 0 nope osc_1_bang empty 0 -10 0 12 #2f004d
+#e3c6ff #000000;
+#X obj 154 70 hsl 162 19 -1 1 0 0 no_send osc_1_output empty -2 -10
+0 12 #2f004d #e3c6ff #000000 0 1;
+#X obj 130 91 bng 19 250 50 0 nope osc_2_bang empty 0 -10 0 12 #2f004d
+#e3c6ff #000000;
+#X obj 154 91 hsl 162 19 -1 1 0 0 no_send osc_2_output empty -2 -10
+0 12 #2f004d #e3c6ff #000000 0 1;
+#X obj 130 112 bng 19 250 50 0 nope osc_3_bang empty 0 -10 0 12 #2f004d
+#e3c6ff #000000;
+#X obj 154 112 hsl 162 19 -1 1 0 0 no_send osc_3_output empty -2 -10
+0 12 #2f004d #e3c6ff #000000 0 1;
+#X obj 130 133 bng 19 250 50 0 nope osc_4_bang empty 0 -10 0 12 #2f004d
+#e3c6ff #000000;
+#X obj 154 133 hsl 162 19 -1 1 0 0 no_send osc_4_output empty -2 -10
+0 12 #2f004d #e3c6ff #000000 0 1;
 #X obj 40 91 oscillator 2;
 #X obj 40 112 oscillator 3;
 #X obj 40 133 oscillator 4;
 #X obj 40 163 braid sample_trigger;
-#X obj 186 163 bng 19 250 50 0 no_send braid_sample_trigger_bang empty 0 -10 0 12 #551312 #ffc7c6 #000000;
+#X obj 186 163 bng 19 250 50 0 no_send braid_sample_trigger_bang empty
+0 -10 0 12 #551312 #ffc7c6 #000000;
 #X obj 40 223 preset;
