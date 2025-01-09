@@ -7,7 +7,7 @@ osc_3_start 3.55;
 osc_3_end 6;
 osc_4_start 22;
 osc_4_end 12;
-braid_sample_trigger_mul_1 1;
+braid_sample_trigger_mul_1 1.2;
 braid_sample_trigger_mul_2 1;
 braid_sample_trigger_mul_3 0;
 braid_sample_trigger_mul_4 0;
